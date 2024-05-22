@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 10px;
+            grid-auto-columns: minmax(50px,auto);
+            grid-auto-rows: minmax(100px,auto);
+            column-gap: 40px;
+            row-gap: 40px;
+        }
+        .items{
+            background-color: lightcoral;
+            border: 3px green solid;
+            border-radius: 4px;
+            text-align: center;
+        }
+        #item1{
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        #item2{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="item1">Box1</div>
+        <div class="items" id="item2">Box2</div>
+        <div class="items">Box3</div>
+        <div class="items">Box4</div>
+        <div class="items">Box5</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+li em{
+    color: rebeccapurple;
+}
+body h1+p .special{
+    color:yellow;
+    background-color: red;
+}
+a:hover{
+    color: saddlebrown;
+    text-decoration: none;
+}
